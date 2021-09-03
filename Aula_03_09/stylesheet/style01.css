@@ -31,5 +31,9 @@ hr {
 
 pre {
     font-size: large;
-    margin-left: -50px;
+    margin-left: -100px;
+}
+
+.table-poemas {
+    width: 100%;
 }
