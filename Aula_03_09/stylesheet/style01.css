@@ -2,7 +2,53 @@
 header {
     text-align: center;
     font-size: 30px;
+    
     width: 100%;
+}
+
+
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 100px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height:  100px;
+    background-color: red;
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FDDFB6;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #111;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #8d8d8d;
 }
 
 body {
@@ -14,26 +60,26 @@ h2 {
     color: rgb(0, 0, 0);
 }
 
-hr {
-    border: 1px solid black;
-}
-
-.poema {
-    width: 40%;
-    text-align: center;
-    background-color: #DAAD86;
-    padding: 10px 10px 10px 30px;
-    border-style: solid;
-    border-width: 10px;
-    border-color: #659dbd;
-    margin-bottom: 20px;
-}
-
 pre {
     font-size: large;
-    margin-left: -100px;
+    margin-left: -130px;
 }
 
-.table-poemas {
-    width: 100%;
+.container-poemas {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #DAAD86;
+    padding: 10px;
+    gap: 10px;
+}
+
+.container-poemas > div {
+    background-color: #FBEEC1;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.poema5 {
+    grid-column: 1/-1;
 }
