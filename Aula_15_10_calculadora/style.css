@@ -1,0 +1,78 @@
+body {
+    --color-background: #08161d;
+    --color-primary: #0d2835;
+    --color-primary-light: #1a333f;
+    --color-primary-lighter: #63767e;
+    --color-evidence: #03b1ff;
+    --color-evidence-light: #47c5ff;
+    --color-evidence-lighter: #98deff;
+    --color-border: rgba(0, 0, 0, 0.2);
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background: var(--color-background);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.calculator {
+    position: relative;
+    display: grid;
+}
+
+.calculator .output {
+    grid-column: span 4;
+    height: 100px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.calculator span {
+    display: grid;
+    width: 60px;
+    height: 60px;
+    color: white;
+    background: var(--color-primary);
+    place-items: center;
+    border: 1px solid var(--color-border);
+}
+
+.calculator span:active {
+    background: var(--color-primary-lighter);
+}
+
+.calculator span:hover {
+    background: var(--color-primary-light);
+}
+
+.calculator span.clear {
+    grid-column: span 2;
+    width: 122px;
+}
+
+.calculator span.zero {
+    grid-column: span 2;
+    width: 122px;
+}
+
+.calculator .equals {
+    background: var(--color-evidence);
+}
+
+.calculator .equals:hover {
+    background: var(--color-evidence-light);
+}
+
+.calculator .equals:active {
+    background: var(--color-evidence-lighter);
+}
